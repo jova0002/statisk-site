@@ -215,7 +215,7 @@ a:hover {
 
 .foer_pris {
   text-decoration: line-through;
-  color: rgb(255, 0, 0);
+  color: red;
 }
 
 /* SOLD OUT */
