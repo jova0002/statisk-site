@@ -189,7 +189,7 @@ a:hover {
   left: 87%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: red;
+  background-color: palevioletred;
   width: 52px;
   border-radius: 30px;
   padding: 7px;
@@ -202,7 +202,7 @@ a:hover {
   left: 12%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: red;
+  background-color: palevioletred;
   width: 52px;
   border-radius: 30px;
   padding: 7px;
@@ -215,7 +215,7 @@ a:hover {
 
 .foer_pris {
   text-decoration: line-through;
-  color: red;
+  color: r;
 }
 
 /* SOLD OUT */
@@ -226,7 +226,7 @@ a:hover {
   left: 10%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: red;
+  background-color: palevioletred;
   width: 42px;
   color: white;
 }
