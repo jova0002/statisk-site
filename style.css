@@ -1,0 +1,216 @@
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 243, 243);
+}
+
+main {
+  max-width: 1200px; /** Størrelse på skærm **/
+  margin-inline: auto; /** Centrerer **/
+  padding-left: 1rem; /** Venstre luft **/
+  padding-right: 1rem; /** Højre luft **/
+}
+
+/* LOGO */
+
+.logo_img {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 550px;
+  padding-right: 550px;
+}
+
+header {
+  background-color: #fcdde4;
+  margin-bottom: 20px;
+}
+
+/* KNAP */
+
+.knapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.knap {
+  background-color: #e3a8b5; /* Grøn baggrund */
+  padding: 30px 20px; /* Indvendig afstand */
+  font-size: 16px; /* Skriftstørrelse */
+  text-align: center; /* Centrer tekst */
+  cursor: pointer; /* Hånd-markør */
+  margin-top: 2%;
+  border-radius: 1rem;
+  transition-duration: 0.4s; /* Tiden på skift af farve */
+  cursor: pointer; /* Ændre musen */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Skygge på knappen*/
+}
+
+.knap:hover {
+  background-color: #b46e7d; /* Knappens hover-effekt*/
+}
+
+.knap a {
+  text-decoration: none; /** Fjerner underscore **/
+  color: #8d1a4d; /** Farve **/
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* PRODUKTLISTE */
+
+.produkt {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-rows: repeat(5, auto);
+}
+
+.item {
+  grid-row: span 5;
+  display: grid;
+  grid-template-rows: subgrid;
+  position: relative;
+}
+
+/* PRODUKT  */
+
+.grid_1_1_1 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.kurv {
+  background-color: #e3a8b5;
+  color: white;
+  padding: 1.5rem;
+}
+
+/* SKRIFT */
+
+h1,
+h2,
+h3,
+p,
+button {
+  margin-top: 10px;
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: #8d1a4d;
+
+  margin-bottom: 10px;
+}
+
+p,
+button {
+  font-family: "Nunito Sans", serif;
+}
+
+a {
+  color: #b46e7d;
+}
+
+a:hover {
+  color: #e3a8b5;
+}
+
+/* FONTS */
+
+.anton-regular {
+  font-family: "Nunito Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spectral-regular {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* DISCOUNT */
+
+.discount {
+  position: absolute;
+  top: 53%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: red;
+  width: 52px;
+  border-radius: 30px;
+  padding: 7px;
+  color: white;
+}
+
+.discount2 {
+  position: absolute;
+  top: 22%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: red;
+  width: 52px;
+  border-radius: 30px;
+  padding: 7px;
+  color: white;
+}
+
+.discount_tekst {
+  font-family: "Anton", serif;
+}
+
+.foer_pris {
+  text-decoration: line-through;
+  color: rgb(255, 0, 0);
+}
+
+/* SOLD OUT */
+
+.sold_out {
+  position: absolute;
+  top: 6%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: red;
+  width: 42px;
+  color: white;
+}
+
+.sold_out_tekst {
+  font-family: "Anton", serif;
+}
+
+.sold_out_img {
+  position: relative;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.hide {
+  display: none;
+}
