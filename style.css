@@ -11,7 +11,7 @@ img {
 }
 
 body {
-  background-color: rgb(255, 243, 243);
+  background-color: #ece0dd;
 }
 
 main {
@@ -19,6 +19,14 @@ main {
   margin-inline: auto; /** Centrerer **/
   padding-left: 1rem; /** Venstre luft **/
   padding-right: 1rem; /** Højre luft **/
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #8d1a4d;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /* LOGO */
@@ -31,10 +39,10 @@ main {
   padding-right: 550px;
 }
 
-header {
+/* header {
   background-color: #fcdde4;
   margin-bottom: 20px;
-}
+} */
 
 /* KNAP */
 
@@ -125,6 +133,7 @@ a {
 }
 
 p,
+li,
 button {
   font-family: "Nunito Sans", serif;
 }
@@ -135,6 +144,27 @@ a {
 
 a:hover {
   color: #e3a8b5;
+}
+
+.h1_midt {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.om_tekst {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mindre_tekst {
+  padding-left: 27%;
+  padding-right: 27%;
+  margin-bottom: 20px;
 }
 
 /* FONTS */
@@ -196,7 +226,7 @@ a:hover {
   left: 10%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: rgb(185, 0, 0);
+  background-color: red;
   width: 42px;
   color: white;
 }
