@@ -196,7 +196,7 @@ a:hover {
   left: 10%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: red;
+  background-color: rgb(185, 0, 0);
   width: 42px;
   color: white;
 }
